@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css"></style>
+    <title>BIODATA MAHASISWA</title>
+
+    <meta charset="UTF-8" />
+    <title>Styled Video Player with Subtitles - Mozilla</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="atas">
+      <h1 align="center">Biodata Mahasiswa</h1>
+      <hr width="500" />
+      <table align="center" cellpading="5" align="center" width="800">
+        <tr>
+          <td>NIM</td>
+          <td>: A11.2022.14205</td>
+          <td align="center">Nama Mahasiswa : Wisnu Arya</td>
+        </tr>
+        <tr>
+          <td>Dosen Wali</td>
+          <td>: Muhammad Syaifur Rohman,M.CS</td>
+          <td rowspan="5" align="center"><img src="gambar/Wisnu.jpg" width="100" alt="" /></td>
+        </tr>
+        <tr>
+          <td>Agama</td>
+          <td>: Islam</td>
+        </tr>
+        <tr>
+          <td>Jenis Kelamin</td>
+          <td>: Laki-Laki</td>
+        </tr>
+        <tr>
+          <td>Alamat Semarang</td>
+          <td>: Jl. Sadewa 1 no.53</td>
+        </tr>
+        <tr>
+          <td>Alamat Asal</td>
+          <td>: Kudus</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>: 111202214205@mhs.dinus.ac.id</td>
+          <td align="center">No. Handphone : 0821367xxxxx</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="bawah">
+      <p style="margin-left: 10%">Jadwal KRS</p>
+
+      <table border="1" width="80%" align="center">
+        <tr>
+          <th>No</th>
+          <th>Kode Mata Kuliah</th>
+          <th>Kelompok</th>
+          <th>Mata Kuliah</th>
+          <th>SKS</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <th>1</th>
+          <th>A11.54101</th>
+          <th>A11.4105</th>
+          <th>KALKULUS 1</th>
+          <th>4</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>2</th>
+          <th>A11.54105</th>
+          <th>A11.4105</th>
+          <th>DASAR PEMROGRAMAN</th>
+          <th>4</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>3</th>
+          <th>A11.54302</th>
+          <th>A11.4105</th>
+          <th>MATEMATIKA DISKRIT</th>
+          <th>3</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>4</th>
+          <th>A11.54314</th>
+          <th>A11.4105</th>
+          <th>PEMROGRAMAN BERBASIS WEB</th>
+          <th>2</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>5</th>
+          <th>A11.54403</th>
+          <th>A11.4105</th>
+          <th>ORGANISASI DAN ARSITEKTUR KOMPUTER</th>
+          <th>3</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>6</th>
+          <th>AF201704</th>
+          <th>A11.4105</th>
+          <th>DASAR DASAR KOMPUTASI</th>
+          <th>2</th>
+          <th>B</th>
+        </tr>
+        <tr>
+          <th>7</th>
+          <th>U201704</th>
+          <th>A11.4105</th>
+          <th>PENGANTAR TEKNOLOGI INFORMASI</th>
+          <th>2</th>
+          <th>B</th>
+        </tr>
+      </table>
+    </div>
+    <center><h2>Sintel</h2></center>
+    <figure id="videoContainer" data-fullscreen="false">
+      <video id="video" controls preload="metadata">
+        <source src="video/Hawk Nelson - Sold Out (Official Lyric Video).mp4" type="video/mp4" />
+        <source src="video/sintel-short.webm" type="video/webm" />
+        <track label="English" kind="subtitles" srclang="en" src="subtitle/sintel-en.vtt" default />
+        <track label="Deutsch" kind="subtitles" srclang="de" src="subtitles/vtt/sintel-de.vtt" />
+        <track label="Español" kind="subtitles" srclang="es" src="subtitles/vtt/sintel-es.vtt" />
+      </video>
+      <div id="video-controls" class="controls" data-state="hidden">
+        <button id="playpause" type="button" data-state="play">Play/Pause</button>
+        <button id="stop" type="button" data-state="stop">Stop</button>
+        <div class="progress">
+          <progress id="progress" value="0" min="0">
+            <span id="progress-bar"></span>
+          </progress>
+        </div>
+        <button id="mute" type="button" data-state="mute">Mute/Unmute</button>
+        <button id="volinc" type="button" data-state="volup">Vol+</button>
+        <button id="voldec" type="button" data-state="voldown">Vol-</button>
+        <button id="fs" type="button" data-state="go-fullscreen">Fullscreen</button>
+        <button id="subtitles" type="button" data-state="subtitles">CC</button>
+      </div>
+      <figcaption>&copy; copyright Blender Foundation | <a href="http://www.sintel.org">www.sintel.org</a></figcaption>
+    </figure>
+    <script src="js/video-player.js"></script>
+  </body>
+</html>
