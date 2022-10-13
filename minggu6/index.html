@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contoh Layout dengan Elemen Semantik</title>
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/image/gambar1.webp" />
+  </head>
+  <body>
+    <header>
+      <div class="jumbotron">
+        <h1>Selamat Datang</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#contactme">Contact Me</a></li>
+          <li><a href="#aboutme">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div id="content">
+        <article id="home" class="profile card">
+          <h2>Home</h2>
+          <header>
+            <figure>
+              <img src="assets/image/fotowisnu.jpg" alt="" />
+            </figure>
+            <h3 align="center">Hi, saya adalah web developer. Saat ini saya sedang belajar HTML dan CSS</h3>
+          </header>
+
+          <section>
+            <div style="max-width: 600px; margin: 3em auto">
+              <table border="1" width="100%">
+                <thead>
+                  <tr>
+                    <th>Skill</th>
+                    <th>Pengalaman</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <ul>
+                        <li>HTML </li>
+                        <li>CSS </li>
+                        <li>Javascript</li>
+                      </ul>
+                    </td>
+                    <td>
+                      <ul>
+                        <li>Magang di CV.Adiga Solution</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </article>
+
+        <article id="contactme" class="card">
+          <div>
+            <h2>Contact Me</h2>
+            <form>
+              <li><i class="fa fa-whatsapp" aria-hidden="true"></i>WhatsApp : 082136764725</li>
+              <li>Email: wisnu.angga7777@gmail.com</li>
+              <li><a href="https://www.instagram.com/wisnuaryategar/">Instagram</a></li>
+
+              <label for="email">Email</label><br />
+              <input type="email" name="email" placeholder="alamat email" required />
+              <br />
+              <label for="message">Pesan</label><br />
+              <textarea name="message" placeholder="Tulis pesan anda..." rows="10" cols="100" required></textarea>
+              <br />
+              <br />
+              <input type="submit" value="Kirim" />
+            </form>
+          </div>
+        </article>
+
+        <article id="aboutme" class="card">
+          <h2>About Me</h2>
+          <p>Hi, saya adalah web developer. Saat ini sedang belajar kembali tentang HTML.</p>
+          <p>Saya masih tahap belajar dalam web development, karena itu saya tidak akan pernah berhenti belajar.</p>
+          <p>Saya ingin menguasai bahasa HTML, CSS, dan Javascript.</p>
+          <p>
+            <video controls>
+              <source src="assets/video/vid1.webm" type="video/webm" />
+            </video>
+          </p>
+        </article>
+      </div>
+
+      <aside>
+        <article class="profile card">
+          <header>
+            <h2>Profile Saya</h2>
+            <figure>
+              <img src="assets/image/fotowisnu.jpg" />
+            </figure>
+          </header>
+          <section>
+            <h3>Informasi Lainnya</h3>
+            <table>
+              <tr>
+                <th>Nama</th>
+                <td>Wisnu Arya Tegar Anggaraksa</td>
+              </tr>
+              <tr>
+                <th>Tanggal Lahir</th>
+                <td>18 Maret 2004</td>
+              </tr>
+              <tr>
+                <th>Alamat</th>
+                <td>Kudus, Jawa Tengah</td>
+              </tr>
+              <tr>
+                <th>Hobi</th>
+                <td>Kurang Tahu</td>
+              </tr>
+              <tr>
+                <th>Jabatan</th>
+                <td>Mahasiswa Baru</td>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <td>wisnu.angga7777@gmail.com</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Belajar Dasar Pemrograman Web &copy; 2022, Wisnu Arya</p>
+    </footer>
+  </body>
+</html>
